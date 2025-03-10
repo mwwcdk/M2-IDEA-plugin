@@ -52,6 +52,13 @@
       <action id="SvnUpdateDesignTrunkDirectoryAction" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateDesignTrunkDirectoryAction"
               text="SVN更新策划主干目录" description="SVN更新策划主干目录">
       </action>
+      <action id="SvnUpdateClientTrunkDirectoryAction" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateClientTrunkDirectoryAction"
+              text="SVN更新客户端主干目录" description="SVN更新客户端主干目录">
+      </action>
+      <separator/>
+      <action id="OpenDesignTrunkDirectoryAction" class="com.windforce.m2.m2ideaplugin.action.OpenDesignTrunkDirectoryAction"
+              text="打开策划主干目录" description="打开策划主干目录">
+      </action>
     </group>
 
 <!--    <group id="YourPlugin.MainMenu"-->

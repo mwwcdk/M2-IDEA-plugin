@@ -20,6 +20,9 @@ public final class PluginSettings implements PersistentStateComponent<PluginSett
     public static class State {
         /** 策划trunk目录 */
         public String designTrunkDirectory = "";
+
+        /** 客户端trunk目录 */
+        public String clientTrunkDirectory = "";
     }
 
     @Override
