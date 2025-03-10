@@ -31,8 +31,8 @@ public class OpenDesignTrunkDirectoryAction extends AnAction {
         if (StringUtils.isEmpty(designTrunkDirectory)) {
             // 选取SVN目录
             FileChooserDescriptor descriptor = new FileChooserDescriptor(false, true, false, false, false, false);
-            descriptor.setTitle("选择目录");
-            descriptor.setDescription("请指定策划trunk所在目录");
+            descriptor.setTitle("请指定策划trunk所在目录");
+            descriptor.setDescription("例如G:\\FM-M1\\Design\\trunk");
             VirtualFile selectedDir = FileChooser.chooseFile(descriptor, anActionEvent.getProject(), null);
             designTrunkDirectory = selectedDir.getPath();
             // 持久化
