@@ -27,4 +27,39 @@
   <extensions defaultExtensionNs="com.intellij">
 
   </extensions>
+
+  <actions>
+<!--    <group id="MyPlugin.MainMenu" text="My Menu" description="Custom Main Menu">-->
+<!--      <add-to-group group-id="MainMenu" anchor="last"/>  &lt;!&ndash; 将一级菜单添加到 IDEA 主菜单栏末尾 &ndash;&gt;-->
+<!--      <action id="MyPlugin.Action1" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateDesignTrunkDirectoryAction" text="Action 1" />-->
+<!--    </group>-->
+
+<!--    <action id="HelloAction_Export_Last" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateDesignTrunkDirectoryAction" text="Hello 冬冬"-->
+<!--            description="Hello 冬冬的IDEA插件项目示例">-->
+<!--      <add-to-group group-id="ToolsMenu" anchor="last"/>-->
+<!--    </action>-->
+
+<!--    <group id="MyPlugin.SampleMenu" text="_SampleMenu" description="Sample menu">-->
+<!--      <add-to-group group-id="MainMenu" anchor="last"  />-->
+<!--      <action id="Myplugin.Textboxes" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateDesignTrunkDirectoryAction" text="Text _Boxes" description="A test menu item" />-->
+<!--      <separator/>-->
+<!--    </group>-->
+
+    <group id="M2" text="M2" popup="true" icon="AllIcons.Actions.Refresh"
+           description="用于M2项目的一系列快捷工具">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+
+      <action id="SvnUpdateDesignTrunkDirectoryAction" class="com.windforce.m2.m2ideaplugin.action.SvnUpdateDesignTrunkDirectoryAction"
+              text="SVN更新策划主干目录" description="SVN更新策划主干目录">
+      </action>
+    </group>
+
+<!--    <group id="YourPlugin.MainMenu"-->
+<!--           text="自定义菜单"-->
+<!--           description="新增的一级菜单">-->
+<!--      <add-to-group group-id="MainMenu" anchor="last"/> &lt;!&ndash; 将菜单添加到主菜单栏末尾 &ndash;&gt;-->
+<!--    </group>-->
+
+  </actions>
+
 </idea-plugin>
