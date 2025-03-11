@@ -63,6 +63,10 @@
       <action id="GenerateDesignClassConfAction" class="com.windforce.m2.m2ideaplugin.action.GenerateDesignClassConfAction"
               text="根据策划配置class生成服务端conf" description="根据策划配置class生成服务端conf">
       </action>
+      <separator/>
+      <action id="ReadMeAction" class="com.windforce.m2.m2ideaplugin.action.ReadMeAction"
+              text="ReadMe" description="插件说明">
+      </action>
     </group>
 
 <!--    <group id="YourPlugin.MainMenu"-->
