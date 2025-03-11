@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.windforce.m2"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
   mavenCentral()
