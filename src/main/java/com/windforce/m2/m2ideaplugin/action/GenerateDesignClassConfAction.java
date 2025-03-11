@@ -8,9 +8,11 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.ui.MessageType;
+import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -94,6 +96,9 @@ public class GenerateDesignClassConfAction extends AnAction {
             }
             // 写入新文件
             Files.write(Path.of(applicationConfPath), newLines);
+            // 刷新IDEA缓存中的该文件信息
+            VirtualFile file = LocalFileSystem.getInstance().refreshAndFindFileByIoFile(new File(applicationConfPath));
+            file.refresh(true, true);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
